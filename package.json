@@ -1,0 +1,27 @@
+{
+  "name": "tilecompressor",
+  "version": "1.0.0",
+  "description": "MultiThreaded Tile Compressor.",
+  "main": "compressor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iursevla/TileCompressor.git"
+  },
+  "keywords": [
+    "tilecompressor",
+    "png",
+    "multithread"
+  ],
+  "author": "Rui Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iursevla/TileCompressor/issues"
+  },
+  "homepage": "https://github.com/iursevla/TileCompressor#readme",
+  "devDependencies": {
+    "shelljs": "^0.7.7"
+  }
+}
