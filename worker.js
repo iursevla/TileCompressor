@@ -4,7 +4,10 @@ let fs = require('fs');
 let pngquantOptions = "--speed 1 --strip --quality=60-80"
 
 console.log("slave", cluster.worker.id, "has started with pid:", process.pid);
-compressPngFiles(process.env.inputFolder, process.env.outputFolder, process.env.pngquantOptions || pngquantOptions, cluster.worker.id);
+let userpngquantOptions =  process.env.pngquantOptions;
+if(userpngquantOptions !== 'undefined')
+    pngquantOptions = userpngquantOptions;
+compressPngFiles(process.env.inputFolder, process.env.outputFolder, pngquantOptions, cluster.worker.id);
 
 function compressPngFiles(inputFolder, outputFolder, options, id) {
     console.time('ExecTime');

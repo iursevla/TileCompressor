@@ -57,9 +57,13 @@ Using 1 Core Execution Time was 3752s = 62m32s
 
 Using 4 Cores Execution Time was 1381s = 23m01s
 
+## Summary
 
-
-## Resumo
+| Tests        | Number Tiles           | Size (MB)  |  Size (MB)  | Exec. Time 1 Core | Exec. Time 4 Cores| 
+| ------------- |:-------------:| -----:| :----| :----| :----|
+| 1      | 351 |  5.99 | 1.88 | 112s(1min52s)| 42s |
+| 2      | 1219      |  14.3 | 4.40 |387s(6min27s) | 134s(2min14s) |
+| 3 | 10192      |    121 |  29.8 |3752s(62m32s) |1381s(23m01s) |
 
 # Dependencies
 
